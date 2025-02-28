@@ -168,9 +168,9 @@ while True:
 
         # Raise sound alert. Here Chinese version is used.
         if Cantonese == False:
-            engine.say("认真听课，不要睡着了！")
+            engine.say("疲劳驾驶请注意！")
         else:
-            engine.say("比心机学嘢，唔好瞓著！")
+            engine.say("疲劳驾驶请注意！")
         engine.runAndWait()
 
     # Show the modified frame with the detected landmarks in a window titled "Image"
