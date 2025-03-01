@@ -3,7 +3,7 @@ import dlib
 import numpy as np
 
 picture_directory = 'Pictures/'
-name = 'Jackie_Cheung'
+name = 'Leon_Lai'
 img = cv2.imread(picture_directory + name + ".jpg")
 img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 mask = np.zeros_like(img_gray)  # 0 means black
