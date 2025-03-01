@@ -16,7 +16,7 @@ Identify the face landmark points of the input face and the output face.
 ### Step 2
 Segment the input face and output face with triangulation based on the face landmarks established in Step 1.
 ### Step 3
-Map, via affine transformseach, triangulated subset of the input face to the corresponding triangulated region of the output face identified by the face landmark point indices. (Note that when the word "region" is used to replace the word "subset", it means that the image contained in the region need not be the same image as it originally was). 
+Map, via affine transforms, each triangulated subset of the input face to the corresponding triangulated region of the output face identified by the face landmark point indices. (Note that when the word "region" is used to replace the word "subset", it means that the image contained in the region need not be the same image as it originally was). 
 ### Step 4
 Piece-stitch together the mapped triangulated regions to reconstruct the output face.
 ### Step 5
