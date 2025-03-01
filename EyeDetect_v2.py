@@ -5,6 +5,7 @@ from scipy.spatial import distance
 import pyttsx3
 import random
 # Import Chinese Warning voices
+
 voices = ['com.apple.speech.synthesis.voice.mei-jia',
 'com.apple.speech.synthesis.voice.sin-ji.premium']
 #'com.apple.speech.synthesis.voice.ting-ting']
@@ -167,10 +168,14 @@ while True:
         #            cv2.FONT_HERSHEY_PLAIN, 2, (21, 56, 212), 3)
 
         # Raise sound alert. Here Chinese version is used.
+        engine.say("疲劳驾驶请注意！")
+        # engine.say("Wake up！Be Cautious")
+        '''
         if Cantonese == False:
             engine.say("疲劳驾驶请注意！")
         else:
             engine.say("疲劳驾驶请注意！")
+        '''
         engine.runAndWait()
 
     # Show the modified frame with the detected landmarks in a window titled "Image"
