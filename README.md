@@ -9,7 +9,7 @@ To run a modified version of real-time face swapping which updates the face ever
 To run the real-time drowsiness detection application, execute the command "python EyeDetect_v2.py" in terminal </br>
 
 # 3.Details on Face Swap
-This app relies on the shape_predictor_68_face_landmarks detector which is called by the dlib package. The app takes one source image as the input face and a sequence of real-time video captured image as the output faces. The input face is mapped to each output face and consequently the real-time video will display with the output face swapped with the input face. The construction of face map consists of the following sequential steps. <br>
+This app relies on the shape_predictor_68_face_landmarks detector which is called by the dlib package. The app takes one source image as the input face and a sequence of real-time video captured images as the output faces. The input face is mapped to each output face and consequently the real-time video will display the output face mapped from the input face. The construction of face map consists of the following sequential steps. <br>
 ## 3.1 Steps(Methodology) to construct the face swapping application
 ### Step 1
 Identify the face landmark points of the input face and the output face. 
