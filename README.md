@@ -41,9 +41,17 @@ Identify the eye landmark points of the person in camera (usually the driver).
 ### Step 2
 Calculate the widths and lengths of eyes and conseqeuntly the average width/length ratio, denoted by the eye closing ratio.
 ### Step 3
-Set a threshold of 0.2. If the eye closing ratio is below the threshold, it is considered to be one occurence of eye closing. The system will not alert for one single eye closing occurence for reasons to be described next.
+Set a threshold of 0.2. If the eye closing ratio is below the threshold, it is considered to be one occurence of eye closing. The system will not alert for one single eye closing occurence for reasons to be described in Section 4.2.
 ### Step 4 
 Set a threshold of drowsiness level of 5 and initialize the drowsiness level to be 0. For each of consecutive occurences of eye closing, the drowsiness level is increased by 1; at the end of consecutive occurences of eye closing which means there exist a none-eye-closing status(defined by eye closing ratio>0.2) that ends the consecutive sequence of eye closing, e.g., closed, closed, ..., closed, open, the drowsiness level is reset to 0. If the drowsiness level is greater than 5, the threshold, a warning messsage will be displayed on screen and an alert voice (currently in Chinese) will be raised and heard by the user(ususally the driver)
+
+## 4.2 Why use accumulative count of eye closing instead of instant alert of a single detection
+The detection of eye closing is acute. An unfavorable side effect is the system will raise false alarm when the driver blinks.
+To solve this problem, it is reasonable to declare drowsiness only if there exist a signficant length of consective eye closing occurences. Once the consecutive occurences end, it is fair to claim that the driver is awake.
+
+## 4.3 Result Display
+### Results/Drowsiness/Detection 
+contains three videos of real-time drowsiness detection with alert voice being spoken in Cantonese/English/Mandarin
 
 
 
